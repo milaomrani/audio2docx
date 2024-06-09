@@ -19,3 +19,5 @@ Before running this script, ensure you have Python installed along with the foll
 You can install the necessary Python packages using:
 ```bash
 pip install pydub python-docx nemo_toolkit[all] python-dotenv
+
+## Setup
