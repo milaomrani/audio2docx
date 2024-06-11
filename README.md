@@ -1,4 +1,4 @@
-# Audio2Docx
+# 🔈 Audio2Docx
 
 Audio2Docx is a Python utility that converts audio files into Microsoft Word documents (.docx) by performing speech-to-text transcription using NVIDIA's NeMo toolkit.
 
