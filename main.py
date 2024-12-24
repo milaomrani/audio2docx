@@ -24,7 +24,7 @@ def split_audio(file_path, chunk_length_ms=50000):
 def transcribe_audio(files):
     """Transcribe given list of audio files and save to text files."""
     asr_model = nemo_asr.models.ASRModel.from_pretrained(model_name="stt_en_conformer_ctc_large")
-    transcriptions = asr_model.transcribe(paths2audio_files=files)
+    transcriptions = asr_model.transcribe(files)
     for i, transcription in enumerate(transcriptions):
         text_file_path = f"{output_directory}/chunk_{i}_transcription.txt"
         with open(text_file_path, 'w') as file:
